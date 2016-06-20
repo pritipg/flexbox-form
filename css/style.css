@@ -1,0 +1,22 @@
+
+
+
+.flex-form > * {
+    border: 0;
+    padding: 10px;
+    background: white;
+    line-height: 50px;
+    font-size: 20px;
+    border-radius: 0;
+    outline: 0;
+    border-right: 1 px solid;
+    -webkit-appearance: none;
+}
+
+.flex-form > * {
+    border-right: 0;
+}
+
+.cover {
+    display: flex;
+}
