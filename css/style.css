@@ -1,4 +1,48 @@
+html {
+    box-sizing: border-box;
+}
 
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+/*label, input {
+    letter-spacing: 2px;
+    padding: 20px 5px;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid;
+}
+*/
+
+input[type="date"] {
+    width: 100%;
+    border: 1px solid;
+}
+
+input[type="submit"] {
+    background: gainsboro;
+}
+
+input[type="search"] {
+    border: 1px solid;
+}
+
+select[name=""] {
+    border: 0.5px solid;
+    border-left: 0.5px antiquewhite;
+}
+
+label[for="from"] {
+    border: 0.5px solid;
+    border-right: antiquewhite;
+    border-left: antiquewhite;
+}
 
 
 .flex-form > * {
@@ -13,10 +57,22 @@
     -webkit-appearance: none;
 }
 
-.flex-form > * {
+.flex-form > *: last-child {
     border-right: 0;
 }
 
 .cover {
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-form {
+    display: flex;
+    border: 20px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+input[type="search"] {
+    flex-basis: 500px;
 }
